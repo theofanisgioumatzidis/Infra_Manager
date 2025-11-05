@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "690a2f48bb1a427612f0dc96_48a6dcba-1b42-4492-ba16-ed4981a24f4d",
-  "id": "Page1_get_mailboxes_for_server",
+  "gitSyncId": "690b31f6bb1a427612f0dca5_fe69a633-f01b-4c01-96f2-b957d6888cbb",
+  "id": "Page1_SDU_get_hostnames",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -16,7 +16,7 @@
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/items/mailboxes",
+      "path": "/items/domains",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -25,11 +25,19 @@
       "queryParameters": [
         {
           "key": "fields",
-          "value": "id,domain,address,role,status,warmup_date,auto_reply,url"
+          "value": "id,name"
         },
         {
           "key": "sort",
-          "value": "id"
+          "value": "name"
+        },
+        {
+          "key": "limit",
+          "value": "-1"
+        },
+        {
+          "key": "filter",
+          "value": "{{ JSON.stringify(SDU_get_hostname_field_meta.data?.data?.meta?.options?.filter || {}) }}"
         }
       ],
       "timeoutInMillisecond": 10000
@@ -41,8 +49,12 @@
       "name": "Directus datasource",
       "pluginId": "restapi-plugin"
     },
-    "dynamicBindingPathList": [],
-    "name": "get_mailboxes_for_server",
+    "dynamicBindingPathList": [
+      {
+        "key": "queryParameters[3].value"
+      }
+    ],
+    "name": "SDU_get_hostnames",
     "pageId": "Page1",
     "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": true

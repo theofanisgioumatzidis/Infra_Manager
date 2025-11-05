@@ -1,0 +1,55 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 36,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "948c4aaz3y",
+  "leftColumn": 8,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 8,
+  "mobileRightColumn": 24,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "originalBottomRow": 40,
+  "originalTopRow": 6,
+  "overflow": "NONE",
+  "parentColumnSpace": 14.122314453125,
+  "parentId": "q7e9rea346",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 56,
+  "shouldTruncate": false,
+  "text": "Name: {{ ServerStore.selected()?.name }}\n\nStatus: {{ ServerStore.selected()?.status }}\n\nSetup date: {{ ServerStore.selected()?.setup_date }}\n\nProvider: {{ ServerStore.selected()?.provider }}\n\nIP: {{ ServerStore.selected()?.ip_address }}\n\nName servers:\t{{ ServerStore.selected()?.name_server_1 }}\n\t\t\t\t\t\t\t{{ ServerStore.selected()?.name_server_2 }}\n\nAccess email:\n{{ ServerStore.selected()?.access_email }}",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 6,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "2p6kin4b3s",
+  "widgetName": "Text1Copy"
+}

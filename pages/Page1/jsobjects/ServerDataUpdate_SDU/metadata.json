@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "690b31f6bb1a427612f0dca5_7ecdd099-d939-4890-8821-024235fa7aad",
+  "id": "Page1_ServerDataUpdate_SDU",
+  "unpublishedCollection": {
+    "name": "ServerDataUpdate_SDU",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

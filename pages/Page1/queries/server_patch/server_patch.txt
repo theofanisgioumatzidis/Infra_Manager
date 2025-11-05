@@ -1,0 +1,25 @@
+{{
+  (() => {
+    const payload = {
+      name: ServerNameInput.text,
+      provider: ServerProviderInput.text,
+      status: ServerStatusSelect.selectedOptionValue,
+      setup_date: ServerSetupDatePicker.selectedDate,
+      access_email: ServerAccessEmailInput.text,
+      hostname_domain: ServerHostnameDomainSelect.selectedOptionValue
+    };
+
+    // remove keys with null, undefined, or empty string
+    Object.keys(payload).forEach(k => {
+      if (
+        payload[k] === "" ||
+        payload[k] === null ||
+        payload[k] === undefined
+      ) {
+        delete payload[k];
+      }
+    });
+
+    return payload;
+  })()
+}}

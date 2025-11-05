@@ -1,0 +1,5 @@
+{{
+  {
+    "server": ServerStore.selected()?.id
+  }
+}}

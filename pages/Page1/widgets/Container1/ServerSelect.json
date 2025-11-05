@@ -1,0 +1,65 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 6,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  (get_servers.data.data || [])[0]?.id ))(ServerSelect.options, ServerSelect.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "fwlbl3xlos",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelText": "Select Server",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "7",
+  "leftColumn": 4,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 9,
+  "mobileLeftColumn": 4,
+  "mobileRightColumn": 24,
+  "mobileTopRow": 2,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "value",
+  "parentColumnSpace": 14.122314453125,
+  "parentId": "q7e9rea346",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 28,
+  "serverSideFiltering": false,
+  "sourceData": "{{\n  (get_servers.data || []).map(s => ({\n    label: s.name || `Server #${s.id}`,\n    value: String(s.id)\n  }))\n}}",
+  "topRow": 2,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "ya8fph6mal",
+  "widgetName": "ServerSelect"
+}

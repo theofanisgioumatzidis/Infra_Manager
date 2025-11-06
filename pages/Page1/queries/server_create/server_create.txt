@@ -1,0 +1,30 @@
+{{
+  (() => {
+    const payload = {
+      // optional
+      name: AddServerName.text,
+      provider: AddServerProvider.text,
+      access_email: AddServerAccessEmail.text,
+
+      // required
+      name_server_1: AddServerName_Server_1.text,
+      name_server_2: AddServerName_Server_2.text,
+      ip_address: AddServerIP_Address.text,
+    };
+
+    // Clean only optional keys so required ones are always sent
+    const optionalKeys = ["name", "provider", "access_email"];
+
+    optionalKeys.forEach((k) => {
+      if (
+        payload[k] === "" ||
+        payload[k] === null ||
+        payload[k] === undefined
+      ) {
+        delete payload[k];
+      }
+    });
+
+    return payload;
+  })()
+}}

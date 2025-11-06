@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 23,
+  "bottomRow": 27,
   "boxShadow": "none",
   "defaultText": "",
   "dynamicBindingPathList": [
@@ -12,9 +12,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "label"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -26,13 +23,13 @@
   "isRequired": false,
   "isVisible": true,
   "key": "73fhkz02te",
-  "label": "Domain Provider (Current: {{ ServerStore.selected()?.provider || \"EMPTY\" }})",
+  "label": "Name Server 1*",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 3,
+  "leftColumn": 2,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -41,19 +38,19 @@
   "mobileRightColumn": 23,
   "mobileTopRow": 7,
   "needsErrorInfo": false,
-  "originalBottomRow": 23,
-  "originalTopRow": 16,
+  "originalBottomRow": 16,
+  "originalTopRow": 9,
   "parentColumnSpace": 4.457855224609375,
-  "parentId": "7g81pd3su1",
+  "parentId": "j0wo00as7e",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 57,
   "showStepArrows": false,
-  "topRow": 16,
+  "topRow": 20,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "u4z81ktxad",
-  "widgetName": "ServerProviderInput"
+  "widgetId": "s6xri1byia",
+  "widgetName": "AddServerName_Server_1"
 }

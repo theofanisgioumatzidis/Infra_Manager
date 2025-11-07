@@ -7,10 +7,10 @@
     "metaWidgetId"
   ],
   "animateLoading": true,
-  "backgroundColor": "#15803d",
-  "borderRadius": "{{}}",
-  "bottomRow": 125,
-  "boxShadow": "none",
+  "backgroundColor": "",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 121,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -80,6 +80,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
     }
   ],
   "dynamicPropertyPathList": [
@@ -108,11 +111,11 @@
   "mobileRightColumn": 27,
   "mobileTopRow": 83,
   "needsErrorInfo": false,
-  "originalBottomRow": 176,
-  "originalTopRow": 45,
+  "originalBottomRow": 125,
+  "originalTopRow": 14,
   "pageSize": 4,
   "parentColumnSpace": 9.1357421875,
-  "parentId": "q7e9rea346",
+  "parentId": "rw1ahncble",
   "parentRowSpace": 10,
   "primaryKeys": "{{Domains_Mailboxes.listData.map((currentItem, currentIndex) => currentItem[\"id\"] )}}",
   "renderMode": "CANVAS",
@@ -122,7 +125,7 @@
   "selectedItemView": "{{{}}}",
   "serverSidePagination": false,
   "templateHeight": 160,
-  "topRow": 14,
+  "topRow": 10,
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
   "widgetId": "3b1j8mf898",

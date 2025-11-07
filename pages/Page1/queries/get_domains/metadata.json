@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "690b31f6bb1a427612f0dca5_0270edf2-2e46-448d-8297-726e7ec08fc9",
-  "id": "Page1_SDU_get_status_options",
+  "gitSyncId": "690b31f6bb1a427612f0dca5_26aae4d2-43bd-4d6f-9543-69282abfe8c7",
+  "id": "Page1_get_domains",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -16,13 +16,18 @@
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/fields/servers/status\n",
+      "path": "/items/domains",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ],
-      "queryParameters": [],
+      "queryParameters": [
+        {
+          "key": "fields",
+          "value": "id,server.name,server.id,name,usage,client,website,status,created_at,decommissioned_at,domain_provider,access_email"
+        }
+      ],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
@@ -33,7 +38,7 @@
       "pluginId": "restapi-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "SDU_get_status_options",
+    "name": "get_domains",
     "pageId": "Page1",
     "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": true

@@ -1,0 +1,30 @@
+{{
+  (() => {
+    const payload = {
+      // optional rename
+      name: PatchDomain_NewName.text,
+      server: PatchDomain_Server.selectedOptionValue,
+      usage: PatchDomain_Usage.selectedOptionValue,
+      client: PatchDomain_Client.selectedOptionValue,
+      website: PatchDomain_Website.selectedOptionValue,
+      status: PatchDomain_Status.selectedOptionValue,
+      created_at: PatchDomain_CreatedAt.selectedDate,
+      decommissioned_at: PatchDomain_DecommissionedAt.selectedDate,
+      domain_provider: PatchDomain_Provider.text,
+      access_email: PatchDomain_AccessEmail.text
+    };
+
+    // remove keys with null, undefined, or empty string
+    Object.keys(payload).forEach(k => {
+      if (
+        payload[k] === "" ||
+        payload[k] === null ||
+        payload[k] === undefined
+      ) {
+        delete payload[k];
+      }
+    });
+
+    return payload;
+  })()
+}}

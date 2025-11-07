@@ -58,7 +58,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 57,
   "serverSideFiltering": false,
-  "sourceData": "{{\n  (\n    SDU_get_status_options.data?.data?.meta?.options?.choices || []\n  ).map(c => ({\n    label: c.text,\n    value: c.value\n  }))\n}}",
+  "sourceData": "{{\n  (\n    SDU_Server_status_options.data?.data?.meta?.options?.choices || []\n  ).map(c => ({\n    label: c.text,\n    value: c.value\n  }))\n}}",
   "topRow": 30,
   "type": "SELECT_WIDGET",
   "version": 1,

@@ -1,0 +1,67 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 63,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "labelText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "wotb8yl0c9",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Status Current: \n{{ \n  (get_domains.data?.data || [])\n    .find(d => d.id === PatchDomain_Name.selectedOptionValue)\n    ?.status || \"NULL\"\n}}",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 3,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 31,
+  "mobileLeftColumn": 9,
+  "mobileRightColumn": 29,
+  "mobileTopRow": 24,
+  "needsErrorInfo": false,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 63,
+  "originalTopRow": 56,
+  "parentColumnSpace": 3.836669921875,
+  "parentId": "jaif070irn",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 57,
+  "serverSideFiltering": false,
+  "sourceData": "{{\n  ( SDU_domain_fields.data?.data?.find(f => f.field === \"status\")\n      ?.meta?.options?.choices || []\n  ).map(c => ({\n    label: c.text,\n    value: c.value\n  }))\n}}",
+  "topRow": 56,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "07tsthppzi",
+  "widgetName": "PatchDomain_Status"
+}

@@ -4,11 +4,11 @@
   "borderColor": "#b91c1c",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 13,
+  "bottomRow": 71,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "cachedTableData": {},
   "canFreezeColumn": true,
-  "cellBackground": "#15803d",
+  "cellBackground": "#a16207",
   "childStylesheet": {
     "button": {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -34,29 +34,33 @@
   },
   "columnOrder": [
     "status",
-    "setup_date",
-    "hostname_domain",
-    "ip_address",
-    "name_server_1",
-    "name_server_2",
-    "provider",
-    "access_email",
     "id",
-    "name"
+    "name",
+    "usage",
+    "server",
+    "client",
+    "website",
+    "created_at",
+    "decommissioned_at",
+    "domain_provider",
+    "access_email"
   ],
-  "columnUpdatedAt": 1762445488126,
+  "columnUpdatedAt": 1762523495246,
   "columnWidthMap": {
-    "access_email": 117,
+    "access_email": 129,
     "address": 251,
+    "client": 78,
+    "created_at": 128,
+    "decommissioned_at": 178,
     "domain": 91,
-    "hostname_domain": 232,
+    "domain_provider": 156,
     "id": 60,
-    "ip_address": 124,
-    "name": 182,
-    "provider": 60,
+    "name": 232,
     "role": 90,
-    "setup_date": 116,
-    "status": 80
+    "server": 87,
+    "status": 94,
+    "usage": 81,
+    "website": 92
   },
   "compactMode": "DEFAULT",
   "customIsLoading": false,
@@ -90,64 +94,40 @@
       "key": "primaryColumns.name.computedValue"
     },
     {
+      "key": "primaryColumns.usage.computedValue"
+    },
+    {
+      "key": "primaryColumns.server.computedValue"
+    },
+    {
+      "key": "primaryColumns.client.computedValue"
+    },
+    {
+      "key": "primaryColumns.website.computedValue"
+    },
+    {
+      "key": "primaryColumns.created_at.computedValue"
+    },
+    {
+      "key": "primaryColumns.decommissioned_at.computedValue"
+    },
+    {
+      "key": "primaryColumns.domain_provider.computedValue"
+    },
+    {
       "key": "primaryColumns.access_email.computedValue"
     },
     {
+      "key": "primaryColumns.name.buttonColor"
+    },
+    {
+      "key": "primaryColumns.name.borderRadius"
+    },
+    {
+      "key": "primaryColumns.name.boxShadow"
+    },
+    {
       "key": "primaryColumns.name.buttonLabel"
-    },
-    {
-      "key": "primaryColumns.provider.computedValue"
-    },
-    {
-      "key": "primaryColumns.ip_address.computedValue"
-    },
-    {
-      "key": "primaryColumns.setup_date.computedValue"
-    },
-    {
-      "key": "primaryColumns.name_server_1.computedValue"
-    },
-    {
-      "key": "primaryColumns.name_server_2.computedValue"
-    },
-    {
-      "key": "primaryColumns.hostname_domain.computedValue"
-    },
-    {
-      "key": "primaryColumns.name_server_1.buttonColor"
-    },
-    {
-      "key": "primaryColumns.name_server_1.borderRadius"
-    },
-    {
-      "key": "primaryColumns.name_server_1.boxShadow"
-    },
-    {
-      "key": "primaryColumns.name_server_2.buttonColor"
-    },
-    {
-      "key": "primaryColumns.name_server_2.borderRadius"
-    },
-    {
-      "key": "primaryColumns.name_server_2.boxShadow"
-    },
-    {
-      "key": "primaryColumns.name_server_2.buttonLabel"
-    },
-    {
-      "key": "primaryColumns.name_server_1.buttonLabel"
-    },
-    {
-      "key": "primaryColumns.hostname_domain.buttonColor"
-    },
-    {
-      "key": "primaryColumns.hostname_domain.borderRadius"
-    },
-    {
-      "key": "primaryColumns.hostname_domain.boxShadow"
-    },
-    {
-      "key": "primaryColumns.hostname_domain.buttonLabel"
     },
     {
       "key": "textColor"
@@ -162,25 +142,28 @@
       "key": "primaryColumns.name.textColor"
     },
     {
+      "key": "primaryColumns.usage.textColor"
+    },
+    {
+      "key": "primaryColumns.server.textColor"
+    },
+    {
+      "key": "primaryColumns.client.textColor"
+    },
+    {
+      "key": "primaryColumns.website.textColor"
+    },
+    {
+      "key": "primaryColumns.created_at.textColor"
+    },
+    {
+      "key": "primaryColumns.decommissioned_at.textColor"
+    },
+    {
+      "key": "primaryColumns.domain_provider.textColor"
+    },
+    {
       "key": "primaryColumns.access_email.textColor"
-    },
-    {
-      "key": "primaryColumns.provider.textColor"
-    },
-    {
-      "key": "primaryColumns.ip_address.textColor"
-    },
-    {
-      "key": "primaryColumns.setup_date.textColor"
-    },
-    {
-      "key": "primaryColumns.name_server_1.textColor"
-    },
-    {
-      "key": "primaryColumns.name_server_2.textColor"
-    },
-    {
-      "key": "primaryColumns.hostname_domain.textColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -190,29 +173,11 @@
     },
     {
       "key": "primaryColumns.name.onClick"
-    },
-    {
-      "key": "primaryColumns.name_server_1.onClick"
-    },
-    {
-      "key": "primaryColumns.name_server_2.onClick"
-    },
-    {
-      "key": "primaryColumns.hostname_domain.onClick"
     }
   ],
   "dynamicTriggerPathList": [
     {
       "key": "primaryColumns.name.onClick"
-    },
-    {
-      "key": "primaryColumns.name_server_2.onClick"
-    },
-    {
-      "key": "primaryColumns.name_server_1.onClick"
-    },
-    {
-      "key": "primaryColumns.hostname_domain.onClick"
     }
   ],
   "enableClientSideSearch": true,
@@ -225,7 +190,7 @@
   "isVisible": true,
   "isVisibleDownload": false,
   "isVisibleFilters": false,
-  "isVisiblePagination": false,
+  "isVisiblePagination": true,
   "isVisibleSearch": false,
   "key": "zvnvatz5kk",
   "label": "Data",
@@ -236,19 +201,19 @@
   "mobileRightColumn": 60,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "originalBottomRow": 30,
-  "originalTopRow": 21,
+  "originalBottomRow": 72,
+  "originalTopRow": 44,
   "parentColumnSpace": 8.270004272460938,
-  "parentId": "q7e9rea346",
+  "parentId": "9c3gcnyqz3",
   "parentRowSpace": 10,
   "primaryColumns": {
     "access_email": {
       "alias": "access_email",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "#15803d",
+      "cellBackground": "#a16207",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = ServerTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"access_email\"])) : access_email })()}}",
+      "computedValue": "{{(() => { const tableData = Domains_all.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"access_email\"])) : access_email })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -275,24 +240,119 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "hostname_domain": {
-      "alias": "hostname_domain",
+    "client": {
+      "alias": "client",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "borderRadius": "{{ServerTable.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-      "boxShadow": "{{ServerTable.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "{{ServerTable.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
-      "buttonLabel": "{{(() => { const tableData = ServerTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow.hostname_domain.name)) : currentRow.hostname_domain.name })()}}",
-      "cellBackground": "#15803d",
-      "columnType": "button",
-      "computedValue": "{{(() => { const tableData = ServerTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow.hostname_domain.name)) : currentRow.hostname_domain.name })()}}",
+      "cellBackground": "#a16207",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Domains_all.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"client\"])) : client })()}}",
       "currencyCode": "USD",
-      "customAlias": "",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "horizontalAlignment": "LEFT",
-      "id": "hostname_domain",
+      "id": "client",
+      "index": 5,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "client",
+      "notation": "standard",
+      "originalId": "client",
+      "sticky": "",
+      "textColor": "{{appsmith.theme.colors.backgroundColor}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "created_at": {
+      "alias": "created_at",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "#a16207",
+      "columnType": "date",
+      "computedValue": "{{(() => { const tableData = Domains_all.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"created_at\"])) : created_at })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "created_at",
+      "index": 7,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "created_at",
+      "notation": "standard",
+      "originalId": "created_at",
+      "outputFormat": "Do MMM YYYY",
+      "sticky": "",
+      "textColor": "{{appsmith.theme.colors.backgroundColor}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "decommissioned_at": {
+      "alias": "decommissioned_at",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "#a16207",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Domains_all.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"decommissioned_at\"])) : decommissioned_at })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "decommissioned_at",
+      "index": 8,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "decommissioned_at",
+      "notation": "standard",
+      "originalId": "decommissioned_at",
+      "sticky": "",
+      "textColor": "{{appsmith.theme.colors.backgroundColor}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "domain_provider": {
+      "alias": "domain_provider",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "#a16207",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Domains_all.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"domain_provider\"])) : domain_provider })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "domain_provider",
       "index": 9,
       "isCellEditable": false,
       "isCellVisible": true,
@@ -302,10 +362,9 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "hostname_domain",
+      "label": "domain_provider",
       "notation": "standard",
-      "onClick": "{{}}{{ copyToClipboard(currentRow.hostname_domain.name); showAlert(\"Hostname copied\",\"success\"); }}",
-      "originalId": "hostname_domain",
+      "originalId": "domain_provider",
       "sticky": "",
       "textColor": "{{appsmith.theme.colors.backgroundColor}}",
       "textSize": "0.875rem",
@@ -318,9 +377,9 @@
       "alias": "id",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "#15803d",
+      "cellBackground": "#a16207",
       "columnType": "number",
-      "computedValue": "{{(() => { const tableData = ServerTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"id\"])) : id })()}}",
+      "computedValue": "{{(() => { const tableData = Domains_all.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"id\"])) : id })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -347,47 +406,17 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "ip_address": {
-      "alias": "ip_address",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "#15803d",
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = ServerTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"ip_address\"])) : ip_address })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "ip_address",
-      "index": 3,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "ip_address",
-      "notation": "standard",
-      "originalId": "ip_address",
-      "sticky": "",
-      "textColor": "{{appsmith.theme.colors.backgroundColor}}",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "name": {
       "alias": "name",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "buttonLabel": "{{(() => { const tableData = ServerTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"name\"])) : currentRow[\"name\"] })()}}",
-      "cellBackground": "#15803d",
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = ServerTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"name\"])) : name })()}}",
+      "borderRadius": "{{Domains_all.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{Domains_all.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "{{Domains_all.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonLabel": "{{(() => { const tableData = Domains_all.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"name\"])) : currentRow[\"name\"] })()}}",
+      "cellBackground": "#a16207",
+      "columnType": "button",
+      "computedValue": "{{(() => { const tableData = Domains_all.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"name\"])) : name })()}}",
       "currencyCode": "USD",
       "customAlias": "",
       "decimals": 0,
@@ -403,7 +432,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "name",
       "notation": "standard",
       "onClick": "{{ copyToClipboard(currentRow.name); showAlert(\"Address copied\",\"success\"); }}",
@@ -416,25 +445,20 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "name_server_1": {
-      "alias": "name_server_1",
+    "server": {
+      "alias": "server",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "borderRadius": "{{ServerTable.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-      "boxShadow": "{{ServerTable.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "{{ServerTable.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
-      "buttonLabel": "{{(() => { const tableData = ServerTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"name_server_1\"])) : currentRow[\"name_server_1\"] })()}}",
-      "cellBackground": "#15803d",
-      "columnType": "button",
-      "computedValue": "{{(() => { const tableData = ServerTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"name_server_1\"])) : name_server_1 })()}}",
+      "cellBackground": "#a16207",
+      "columnType": "number",
+      "computedValue": "{{(() => { const tableData = Domains_all.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow.server?.name)) : currentRow.server?.name })()}}",
       "currencyCode": "USD",
-      "customAlias": "",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "horizontalAlignment": "LEFT",
-      "id": "name_server_1",
-      "index": 6,
+      "id": "server",
+      "index": 3,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -443,117 +467,9 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "name_server_1",
+      "label": "server",
       "notation": "standard",
-      "onClick": "{{ copyToClipboard(currentRow.name_server_1); showAlert(\"Name server 1 copied\",\"success\"); }}",
-      "originalId": "name_server_1",
-      "sticky": "",
-      "textColor": "{{appsmith.theme.colors.backgroundColor}}",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "name_server_2": {
-      "alias": "name_server_2",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "borderRadius": "{{ServerTable.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-      "boxShadow": "{{ServerTable.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "{{ServerTable.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
-      "buttonLabel": "{{(() => { const tableData = ServerTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"name_server_2\"])) : currentRow[\"name_server_2\"] })()}}",
-      "cellBackground": "#15803d",
-      "columnType": "button",
-      "computedValue": "{{(() => { const tableData = ServerTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"name_server_2\"])) : name_server_2 })()}}",
-      "currencyCode": "USD",
-      "customAlias": "",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "name_server_2",
-      "index": 7,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "name_server_2",
-      "notation": "standard",
-      "onClick": "{{ copyToClipboard(currentRow.name_server_2); showAlert(\"Name server 1 copied\",\"success\"); }}",
-      "originalId": "name_server_2",
-      "sticky": "",
-      "textColor": "{{appsmith.theme.colors.backgroundColor}}",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "provider": {
-      "alias": "provider",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "#15803d",
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = ServerTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"provider\"])) : provider })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "provider",
-      "index": 2,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "provider",
-      "notation": "standard",
-      "originalId": "provider",
-      "sticky": "",
-      "textColor": "{{appsmith.theme.colors.backgroundColor}}",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "setup_date": {
-      "alias": "setup_date",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "#15803d",
-      "columnType": "date",
-      "computedValue": "{{(() => { const tableData = ServerTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"setup_date\"])) : setup_date })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "setup_date",
-      "index": 5,
-      "inputFormat": "Do MMM YYYY",
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "setup_date",
-      "notation": "standard",
-      "originalId": "setup_date",
-      "outputFormat": "Do MMM YYYY",
+      "originalId": "server",
       "sticky": "",
       "textColor": "{{appsmith.theme.colors.backgroundColor}}",
       "textSize": "0.875rem",
@@ -566,9 +482,9 @@
       "alias": "status",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "#15803d",
+      "cellBackground": "#a16207",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = ServerTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"status\"])) : status })()}}",
+      "computedValue": "{{(() => { const tableData = Domains_all.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"status\"])) : status })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -594,21 +510,87 @@
       "validation": {},
       "verticalAlignment": "CENTER",
       "width": 150
+    },
+    "usage": {
+      "alias": "usage",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "#a16207",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Domains_all.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"usage\"])) : usage })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "usage",
+      "index": 2,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "usage",
+      "notation": "standard",
+      "originalId": "usage",
+      "sticky": "",
+      "textColor": "{{appsmith.theme.colors.backgroundColor}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "website": {
+      "alias": "website",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "#a16207",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Domains_all.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"website\"])) : website })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "website",
+      "index": 6,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "website",
+      "notation": "standard",
+      "originalId": "website",
+      "sticky": "",
+      "textColor": "{{appsmith.theme.colors.backgroundColor}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
     }
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "searchKey": "",
-  "tableData": "{{\n  (get_servers.data?.data || []).filter(\n    m => m.id === ServerStore.selected()?.id\n  )\n}}",
+  "tableData": "{{ get_domains.data?.data }}",
   "textColor": "{{appsmith.theme.colors.backgroundColor}}",
   "textSize": "0.875rem",
-  "topRow": 4,
+  "topRow": 43,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "variant": "DEFAULT",
   "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "0bfaifi688",
-  "widgetName": "ServerTable"
+  "widgetId": "0q3hefr7lf",
+  "widgetName": "Domains_all"
 }

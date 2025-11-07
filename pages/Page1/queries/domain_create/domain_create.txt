@@ -1,0 +1,27 @@
+{{
+  (() => {
+    const payload = {
+      // required
+      name: AddDomain_Name.text,
+			// optional
+      provider: AddDomain_Provider.text,
+      access_email: AddDomain_AccessEmail.text,     
+      client: AddDomain_Client.selectedOptionValue
+    };
+
+    // Clean only optional keys so required ones are always sent
+    const optionalKeys = ["client", "provider", "access_email"];
+
+    optionalKeys.forEach((k) => {
+      if (
+        payload[k] === "" ||
+        payload[k] === null ||
+        payload[k] === undefined
+      ) {
+        delete payload[k];
+      }
+    });
+
+    return payload;
+  })()
+}}

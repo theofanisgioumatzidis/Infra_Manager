@@ -105,9 +105,6 @@
     },
     {
       "key": "primaryColumns.address.buttonLabel"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -117,9 +114,6 @@
     },
     {
       "key": "primaryColumns.address.onClick"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -134,7 +128,7 @@
   "inlineEditingSaveOption": "ROW_LEVEL",
   "isLoading": false,
   "isSortable": false,
-  "isVisible": "{{ ShowMailboxes.isSwitchedOn }}\n",
+  "isVisible": true,
   "isVisibleDownload": false,
   "isVisibleFilters": false,
   "isVisiblePagination": false,

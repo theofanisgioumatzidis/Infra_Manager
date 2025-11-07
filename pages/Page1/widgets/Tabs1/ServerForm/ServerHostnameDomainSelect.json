@@ -28,7 +28,11 @@
       "key": "optionValue"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onDropdownOpen"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -49,6 +53,7 @@
   "mobileRightColumn": 23,
   "mobileTopRow": 30,
   "needsErrorInfo": false,
+  "onDropdownOpen": "",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 51,

@@ -1,0 +1,61 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 90,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": true,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{\n  !PatchMailbox_Domain.selectedOptionValue ||\n!PatchMailbox_address.selectedOptionValue\n}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "rgjg6b5ig4",
+  "leftColumn": 31,
+  "minWidth": 120,
+  "mobileBottomRow": 37,
+  "mobileLeftColumn": 46,
+  "mobileRightColumn": 62,
+  "mobileTopRow": 33,
+  "needsErrorInfo": false,
+  "onClick": "{{ PatchMailbox.run() }}",
+  "originalBottomRow": 66,
+  "originalTopRow": 62,
+  "parentId": "ah5cgsgune",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": true,
+  "responsiveBehavior": "hug",
+  "rightColumn": 61,
+  "text": "Update Mailbox",
+  "topRow": 86,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "dkmmz771wz",
+  "widgetName": "PatchMailbox_Button"
+}

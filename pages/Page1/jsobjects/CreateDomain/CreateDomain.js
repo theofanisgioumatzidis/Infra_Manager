@@ -14,7 +14,7 @@ export default {
       showAlert("Domain created", "success");
     } catch (e) {
       showAlert("Domain creation failed", "error");
-      console.error("CreateServer error:", e);
+      console.error("CreateDomain error:", e);
     }
   }
 };

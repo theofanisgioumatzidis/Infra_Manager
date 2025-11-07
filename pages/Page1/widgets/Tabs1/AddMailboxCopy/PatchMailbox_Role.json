@@ -1,0 +1,67 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 42,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "labelText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "wotb8yl0c9",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Role Current: {{ \n  (get_mailboxes.data?.data || [])\n    .find(d => d.id === PatchMailbox_address.selectedOptionValue)\n    ?.role || \"NULL\"\n}}",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 4,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 31,
+  "mobileLeftColumn": 9,
+  "mobileRightColumn": 29,
+  "mobileTopRow": 24,
+  "needsErrorInfo": false,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 41,
+  "originalTopRow": 34,
+  "parentColumnSpace": 3.836669921875,
+  "parentId": "ah5cgsgune",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 58,
+  "serverSideFiltering": false,
+  "sourceData": "{{\n  ( SDU_fields_mailboxes.data?.data?.find(f => f.field === \"role\")\n      ?.meta?.options?.choices || []\n  ).map(c => ({\n    label: c.text,\n    value: c.value\n  }))\n}}",
+  "topRow": 35,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "uqq249lxgi",
+  "widgetName": "PatchMailbox_Role"
+}

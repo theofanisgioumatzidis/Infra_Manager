@@ -1,0 +1,61 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 26,
+  "boxShadow": "none",
+  "defaultText": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "validation"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "errorMessage": "This mailbox already exists",
+  "iconAlign": "left",
+  "inputType": "TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "fv60ugoyj3",
+  "label": "Name* (without the domain)",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 4,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 14,
+  "mobileLeftColumn": 5,
+  "mobileRightColumn": 25,
+  "mobileTopRow": 7,
+  "needsErrorInfo": false,
+  "originalBottomRow": 26,
+  "originalTopRow": 19,
+  "parentColumnSpace": 3.836669921875,
+  "parentId": "im881rwp82",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 61,
+  "showStepArrows": false,
+  "topRow": 19,
+  "type": "INPUT_WIDGET_V2",
+  "validation": "{{ \n  AddMailbox_Name.text \n  && AddMailbox_Domain.selectedOptionValue && !get_mailboxes.data?.data?.some(d => d.address.toLowerCase() === `${AddMailbox_Name.text}@${AddMailbox_Domain.selectedOptionLabel}`.toLowerCase()) \n}}",
+  "version": 2,
+  "widgetId": "ov95l0mmaj",
+  "widgetName": "AddMailbox_Name"
+}

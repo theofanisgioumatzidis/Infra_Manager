@@ -1,0 +1,29 @@
+{{
+  (() => {
+    const payload = {
+      // required
+      address: `${AddMailbox_Name.text}@${AddMailbox_Domain.selectedOptionLabel}`.toLowerCase(),
+      domain: AddMailbox_Domain.selectedOptionValue,
+			password: AddMailBox_Password.text,
+      role: AddMailbox_Role.selectedOptionValue,    
+			// optional
+      status: AddMailbox_Status.selectedOptionValue,
+			warmup_date: AddMailbox_WarmupDate.selectedDate
+    };
+
+    // Clean only optional keys so required ones are always sent
+    const optionalKeys = ["status", "warmup_date"];
+
+    optionalKeys.forEach((k) => {
+      if (
+        payload[k] === "" ||
+        payload[k] === null ||
+        payload[k] === undefined
+      ) {
+        delete payload[k];
+      }
+    });
+
+    return payload;
+  })()
+}}

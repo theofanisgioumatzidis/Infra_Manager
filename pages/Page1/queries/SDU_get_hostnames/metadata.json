@@ -37,7 +37,7 @@
         },
         {
           "key": "filter",
-          "value": "{{ JSON.stringify(SDU_get_hostname_field_meta.data?.data?.meta?.options?.filter || {}) }}"
+          "value": "{{ JSON.stringify(SDU_fields_hostname.data?.data?.meta?.options?.filter || {}) }}"
         }
       ],
       "timeoutInMillisecond": 10000

@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "690b31f6bb1a427612f0dca5_6846596e-aa3d-45f7-b82d-4d23bc56e75e",
-  "id": "Page1_SDU_get_hostname_field_meta",
+  "gitSyncId": "690b31f6bb1a427612f0dca5_dd9a2cb1-ada2-41a7-a5a2-ef6f384e92bf",
+  "id": "Page1_get_mailboxes",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -16,13 +16,18 @@
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/fields/servers/hostname_domain",
+      "path": "/items/mailboxes",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ],
-      "queryParameters": [],
+      "queryParameters": [
+        {
+          "key": "fields",
+          "value": "id,domain.name,domain.id,address,role,status,warmup_date,password,auto_reply,url"
+        }
+      ],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
@@ -33,7 +38,7 @@
       "pluginId": "restapi-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "SDU_get_hostname_field_meta",
+    "name": "get_mailboxes",
     "pageId": "Page1",
     "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": true

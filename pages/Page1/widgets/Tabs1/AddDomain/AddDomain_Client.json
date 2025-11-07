@@ -55,7 +55,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 59,
   "serverSideFiltering": false,
-  "sourceData": "{{\n  ( SDU_domain_fields.data?.data?.find(f => f.field === \"client\")\n      ?.meta?.options?.choices || []\n  ).map(c => ({\n    label: c.text,\n    value: c.value\n  }))\n}}",
+  "sourceData": "{{\n  ( SDU_fields_domain.data?.data?.find(f => f.field === \"client\")\n      ?.meta?.options?.choices || []\n  ).map(c => ({\n    label: c.text,\n    value: c.value\n  }))\n}}",
   "topRow": 15,
   "type": "SELECT_WIDGET",
   "version": 1,

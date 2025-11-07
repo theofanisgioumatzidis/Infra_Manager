@@ -1,6 +1,6 @@
 {
   "gitSyncId": "690b31f6bb1a427612f0dca5_fb6a37e3-9d3a-420c-8fef-c665cf9b249d",
-  "id": "Page1_SDU_domain_fields",
+  "id": "Page1_SDU_fields_domain",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -33,7 +33,7 @@
       "pluginId": "restapi-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "SDU_domain_fields",
+    "name": "SDU_fields_domain",
     "pageId": "Page1",
     "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": true

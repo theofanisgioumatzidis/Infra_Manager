@@ -21,7 +21,7 @@
       "httpMethod": "PATCH",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/items/domains/{{ ServerHostnameDomainSelect.selectedOptionValue }}\n",
+      "path": "/items/domains/{{ PatchServer_Hostname.selectedOptionValue }}\n",
       "pluginSpecifiedTemplates": [
         {
           "value": true

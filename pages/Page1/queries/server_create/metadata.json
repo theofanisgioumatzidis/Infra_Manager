@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{{\n  (() => {\n    const payload = {\n      // optional\n      name: AddServerName.text,\n      provider: AddServerProvider.text,\n      access_email: AddServerAccessEmail.text,\n\n      // required\n      name_server_1: AddServerName_Server_1.text,\n      name_server_2: AddServerName_Server_2.text,\n      ip_address: AddServerIP_Address.text,\n    };\n\n    // Clean only optional keys so required ones are always sent\n    const optionalKeys = [\"name\", \"provider\", \"access_email\"];\n\n    optionalKeys.forEach((k) => {\n      if (\n        payload[k] === \"\" ||\n        payload[k] === null ||\n        payload[k] === undefined\n      ) {\n        delete payload[k];\n      }\n    });\n\n    return payload;\n  })()\n}}\n",
+      "body": "{{\n  (() => {\n    const payload = {\n      // optional\n      name: CreateServer_Name.text,\n      provider: CreateServer_Provider.text,\n      access_email: CreateServer_AccessEmail.text,\n\n      // required\n      name_server_1: CreateServer_NS1.text,\n      name_server_2: CreateServer_NS2.text,\n      ip_address: CreateServer_Ip.text,\n    };\n\n    // Clean only optional keys so required ones are always sent\n    const optionalKeys = [\"name\", \"provider\", \"access_email\"];\n\n    optionalKeys.forEach((k) => {\n      if (\n        payload[k] === \"\" ||\n        payload[k] === null ||\n        payload[k] === undefined\n      ) {\n        delete payload[k];\n      }\n    });\n\n    return payload;\n  })()\n}}\n",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {

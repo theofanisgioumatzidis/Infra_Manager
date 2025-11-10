@@ -5,7 +5,7 @@ export default {
       await server_patch.run();
 
       // If a hostname domain was chosen, link it to this server
-      if (ServerHostnameDomainSelect.selectedOptionValue) {
+      if (PatchServer_Hostname.selectedOptionValue) {
         await hostname_patch_server.run();
       }
 

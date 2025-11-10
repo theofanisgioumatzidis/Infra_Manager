@@ -2,14 +2,14 @@
   (() => {
     const payload = {
       // optional
-      name: AddServerName.text,
-      provider: AddServerProvider.text,
-      access_email: AddServerAccessEmail.text,
+      name: CreateServer_Name.text,
+      provider: CreateServer_Provider.text,
+      access_email: CreateServer_AccessEmail.text,
 
       // required
-      name_server_1: AddServerName_Server_1.text,
-      name_server_2: AddServerName_Server_2.text,
-      ip_address: AddServerIP_Address.text,
+      name_server_1: CreateServer_NS1.text,
+      name_server_2: CreateServer_NS2.text,
+      ip_address: CreateServer_Ip.text,
     };
 
     // Clean only optional keys so required ones are always sent

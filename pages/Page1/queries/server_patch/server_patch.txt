@@ -1,14 +1,14 @@
 {{
   (() => {
     const payload = {
-      name: ServerNameInput.text,
-      provider: ServerProviderInput.text,
-      status: ServerStatusSelect.selectedOptionValue,
-      setup_date: ServerSetupDatePicker.selectedDate
-        ? moment(ServerSetupDatePicker.selectedDate).local().format("YYYY-MM-DD")
+      name: PatchServer_Name.text,
+      provider: PatchServer_Provider.text,
+      status: PatchServer_Status.selectedOptionValue,
+      setup_date: PatchServer_SetupDate.selectedDate
+        ? moment(PatchServer_SetupDate.selectedDate).local().format("YYYY-MM-DD")
         : null,
-      access_email: ServerAccessEmailInput.text,
-      hostname_domain: ServerHostnameDomainSelect.selectedOptionValue
+      access_email: PatchServer_AccessEmail.text,
+      hostname_domain: PatchServer_Hostname.selectedOptionValue
     };
 
     // remove keys with null, undefined, or empty string

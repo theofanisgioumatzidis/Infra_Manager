@@ -2,14 +2,14 @@
   (() => {
     const payload = {
       // required
-      address: `${AddMailbox_Name.text}@${AddMailbox_Domain.selectedOptionLabel}`.toLowerCase(),
-      domain: AddMailbox_Domain.selectedOptionValue,
-			password: AddMailBox_Password.text,
-      role: AddMailbox_Role.selectedOptionValue,    
+      address: `${CreateMailbox_Name.text}@${CreateMailbox_Domain.selectedOptionLabel}`.toLowerCase(),
+      domain: CreateMailbox_Domain.selectedOptionValue,
+			password: CreateMailbox_Password.text,
+      role: CreateMailbox_Role.selectedOptionValue,    
 			// optional
-      status: AddMailbox_Status.selectedOptionValue,
-			warmup_date: AddMailbox_WarmupDate.selectedDate
-        ? moment(AddMailbox_WarmupDate.selectedDate).local().format("YYYY-MM-DD")
+      status: CreateMailbox_Status.selectedOptionValue,
+			warmup_date: CreateMailbox_WarmupDate.selectedDate
+        ? moment(CreateMailbox_WarmupDate.selectedDate).local().format("YYYY-MM-DD")
         : null
     };
 

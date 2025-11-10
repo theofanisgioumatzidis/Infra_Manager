@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 26,
+  "bottomRow": 25,
   "boxShadow": "none",
   "defaultText": "",
   "dynamicBindingPathList": [
@@ -52,7 +52,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 61,
   "showStepArrows": false,
-  "topRow": 19,
+  "topRow": 18,
   "type": "INPUT_WIDGET_V2",
   "validation": "{{ \n  AddMailbox_Name.text \n  && AddMailbox_Domain.selectedOptionValue && !get_mailboxes.data?.data?.some(d => d.address.toLowerCase() === `${AddMailbox_Name.text}@${AddMailbox_Domain.selectedOptionLabel}`.toLowerCase()) \n}}",
   "version": 2,

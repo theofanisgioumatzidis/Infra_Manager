@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 44,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "doyoumail",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

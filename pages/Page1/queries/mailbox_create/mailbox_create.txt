@@ -9,6 +9,8 @@
 			// optional
       status: AddMailbox_Status.selectedOptionValue,
 			warmup_date: AddMailbox_WarmupDate.selectedDate
+        ? moment(AddMailbox_WarmupDate.selectedDate).local().format("YYYY-MM-DD")
+        : null
     };
 
     // Clean only optional keys so required ones are always sent

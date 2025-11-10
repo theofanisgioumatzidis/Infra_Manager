@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 51,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "(LastPass) neuraflow.automation@gmail.com",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

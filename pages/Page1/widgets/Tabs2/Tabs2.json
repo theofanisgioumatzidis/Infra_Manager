@@ -5,12 +5,12 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 170,
+  "bottomRow": 80,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1610,
+      "bottomRow": 1590,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -56,7 +56,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1610,
+      "bottomRow": 1500,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -99,6 +99,51 @@
       "version": 1,
       "widgetId": "9c3gcnyqz3",
       "widgetName": "Canvas13"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 710,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "vfwsdbfw4f",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 710,
+      "minWidth": 450,
+      "mobileBottomRow": 711,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 789.453125,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "tdl97am33f",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 789.453125,
+      "tabId": "tabxou41jmvqx",
+      "tabName": "Servers",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "fx1cxo7r02",
+      "widgetName": "Canvas14"
     }
   ],
   "defaultTab": "Server info",
@@ -129,7 +174,7 @@
   "mobileRightColumn": 25,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
-  "originalBottomRow": 170,
+  "originalBottomRow": 80,
   "originalTopRow": 5,
   "parentColumnSpace": 16.796875,
   "parentId": "0",
@@ -155,6 +200,13 @@
       "label": "Domains",
       "positioning": "vertical",
       "widgetId": "9c3gcnyqz3"
+    },
+    "tabxou41jmvqx": {
+      "id": "tabxou41jmvqx",
+      "index": 2,
+      "isVisible": true,
+      "label": "Servers",
+      "widgetId": "fx1cxo7r02"
     }
   },
   "topRow": 5,

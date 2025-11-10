@@ -7,8 +7,12 @@
   : undefined,
       role: PatchMailbox_Role.selectedOptionValue,
       status: PatchMailbox_Status.selectedOptionValue,
-      warmup_date: PatchMailbox_WarmupDate.selectedDate,
-      decommissioned_at: PatchMailbox_DecommissionedAt.selectedDate,
+      warmup_date: PatchMailbox_WarmupDate.selectedDate
+        ? moment(PatchMailbox_WarmupDate.selectedDate).local().format("YYYY-MM-DD")
+        : null,
+      decommissioned_at: PatchMailbox_DecommissionedAt.selectedDate
+        ? moment(PatchMailbox_DecommissionedAt.selectedDate).local().format("YYYY-MM-DD")
+        : null,
 			auto_reply: PatchMailbox_AutoReply.selectedOptionValue,
 			url: PatchMailBox_Url.text,
 			password: PatchMailBox_Password.text

@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 33,
+  "bottomRow": 32,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  \n( SDU_fields_mailboxes.data?.data?.find(f => f.field === \"role\")\n    ?.meta?.options?.choices || [])[0]?.value\n))(AddMailbox_Role.options, AddMailbox_Role.serverSideFiltering) }}",
   "dynamicBindingPathList": [
@@ -59,7 +59,7 @@
   "rightColumn": 58,
   "serverSideFiltering": false,
   "sourceData": "{{\n  ( SDU_fields_mailboxes.data?.data?.find(f => f.field === \"role\")\n      ?.meta?.options?.choices || []\n  ).map(c => ({\n    label: c.text,\n    value: c.value\n  }))\n}}",
-  "topRow": 26,
+  "topRow": 25,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "yud0nleo14",

@@ -4,7 +4,9 @@
       name: ServerNameInput.text,
       provider: ServerProviderInput.text,
       status: ServerStatusSelect.selectedOptionValue,
-      setup_date: ServerSetupDatePicker.selectedDate,
+      setup_date: ServerSetupDatePicker.selectedDate
+        ? moment(ServerSetupDatePicker.selectedDate).local().format("YYYY-MM-DD")
+        : null,
       access_email: ServerAccessEmailInput.text,
       hostname_domain: ServerHostnameDomainSelect.selectedOptionValue
     };

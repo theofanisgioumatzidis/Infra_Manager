@@ -8,8 +8,12 @@
       client: PatchDomain_Client.selectedOptionValue,
       website: PatchDomain_Website.selectedOptionValue,
       status: PatchDomain_Status.selectedOptionValue,
-      created_at: PatchDomain_CreatedAt.selectedDate,
-      decommissioned_at: PatchDomain_DecommissionedAt.selectedDate,
+      created_at: PatchDomain_CreatedAt.selectedDate
+        ? moment(PatchDomain_CreatedAt.selectedDate).local().format("YYYY-MM-DD")
+        : null,
+      decommissioned_at: PatchDomain_DecommissionedAt.selectedDate
+        ? moment(PatchDomain_DecommissionedAt.selectedDate).local().format("YYYY-MM-DD")
+        : null,
       domain_provider: PatchDomain_Provider.text,
       access_email: PatchDomain_AccessEmail.text
     };

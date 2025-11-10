@@ -4,13 +4,19 @@
       // required
       name: AddDomain_Name.text,
 			// optional
-      provider: AddDomain_Provider.text,
+      domain_provider: AddDomain_Provider.text,
       access_email: AddDomain_AccessEmail.text,     
-      client: AddDomain_Client.selectedOptionValue
+      client: AddDomain_Client.selectedOptionValue,
+			usage: AddDomain_Usage.selectedOptionValue,
+			status: AddDomain_Status.selectedOptionValue,
+			website: AddDomain_Website.selectedOptionValue,
+			created_at: AddDomain_CreatedAt.selectedDate
+        ? moment(AddDomain_CreatedAt.selectedDate).local().format("YYYY-MM-DD")
+        : null
     };
 
     // Clean only optional keys so required ones are always sent
-    const optionalKeys = ["client", "provider", "access_email"];
+    const optionalKeys = ["client", "provider", "access_email", "created_at", "status", "website", "usage"];
 
     optionalKeys.forEach((k) => {
       if (

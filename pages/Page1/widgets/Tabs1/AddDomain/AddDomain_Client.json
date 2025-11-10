@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 22,
+  "bottomRow": 44,
   "boxShadow": "none",
   "defaultOptionValue": "",
   "dynamicBindingPathList": [
@@ -56,7 +56,7 @@
   "rightColumn": 59,
   "serverSideFiltering": false,
   "sourceData": "{{\n  ( SDU_fields_domain.data?.data?.find(f => f.field === \"client\")\n      ?.meta?.options?.choices || []\n  ).map(c => ({\n    label: c.text,\n    value: c.value\n  }))\n}}",
-  "topRow": 15,
+  "topRow": 37,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "q33td9v2m1",

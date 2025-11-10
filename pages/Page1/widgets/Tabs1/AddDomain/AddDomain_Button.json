@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 48,
+  "bottomRow": 69,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -53,7 +53,7 @@
   "responsiveBehavior": "hug",
   "rightColumn": 63,
   "text": "Add Domain",
-  "topRow": 44,
+  "topRow": 65,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "6cebcj99wb",
